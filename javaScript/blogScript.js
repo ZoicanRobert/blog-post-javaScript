@@ -85,7 +85,7 @@ function renderArticles(articles){                                           //R
         editButton.textContent = "Edit";
         deleteButton.textContent = "Delete";
         editButtonDecoration.textContent = "|";
-        articleImage.setAttribute('src', articles[i].image);
+        articleImage.setAttribute('src', articles[i].imgUrl);
         articleContent.textContent = articles[i].content;
 
         document.getElementById('main').appendChild(articleContainer);  //Append all elements to the main tag to create the page itself
@@ -121,7 +121,7 @@ function editArticle(article){                                              //Ed
     tagInput.value = article.tag;
     authorInput.value = article.author;
     dateInput.value = article.date;
-    imageInput.value = article.image;
+    imageInput.value = article.imgUrl;
     contentInput.value = article.content;
     submitBtn.onclick = () => saveEditedArticle(article.id);
 }    
@@ -132,7 +132,7 @@ async function saveEditedArticle(id){                                           
       tag: tagInput.value,
       author: authorInput.value,
       date: dateInput.value,
-      image: imageInput.value,
+      imgUrl: imageInput.value,
       content: contentInput.value
     }
     const response = await fetch('http://localhost:3000/articles/' + id, {
@@ -195,7 +195,7 @@ async function addNewArticle(){                                          //Save 
         tag: tagInput.value,
         author: authorInput.value,
         date: dateInput.value,
-        image: imageInput.value,
+        imgUrl: imageInput.value,
         content: contentInput.value
     }  
     const response = await fetch('http://localhost:3000/articles', {
