@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
+.wrapper{
+    width: 1280px;
+    margin:auto;
+}
+
+.title{
+    color: #1e1e1e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 46px;
+    line-height: 57px;
+}
+.subtitle{
+    color: #1e1e1e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+}
+.saying{
+    color: #1e1e1e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+}
+.saying--italic{
+    font-style: italic;
+}
+.text-paragraph{
+    color: #1e1e1e;
+    font-family: 'Cardo', serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 30px 0px;
+}
+
+.nav-menu-wrapper{
+    text-align: end;
+    margin-top: 10px;
+}
+.nav-menu{
+    list-style: none;
+}
+.nav-menu-item:last-child{
+    margin-right: 0;
+}
+.nav-menu-item{
+    display: inline-block;
+    margin-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+#add-article-button{
+    margin-top: 130px;
+    border: 1px inside #9b9b9b;
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 980px;
+    cursor: pointer;
+}
+
+.article{
+    margin-top: 90px;
+}
+.article-title{
+    width: 780px;
+    margin: auto;
+    text-align: center;
+}
+.article-info{
+    width: 780px;
+    margin: 30px auto 40px auto;
+    text-align: center;
+}
+.article-info-text{
+    color: #9b9b9b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 20px;
+}
+.article-info-text--dark{
+    color:#1e1e1e;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+.article-info i{
+    font-size: 8px;
+}
+.article-edit-section-clearfix{
+    width: 1280px;
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 20px;
+}
+.article-edit-section{
+    float: right;
+}
+.article-edit-decoration{
+    margin: 0px 5px;
+}
+.article-edit-button{
+    border: none;
+    background-color: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+.article-paragraph{
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0 100px 0;
+}
+.footer-button{
+    font-size: 34px;
+    line-height: 42px;
+    color: #1e1e1e;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+#modal-container{
+    width: 1000px;
+    height: 750px;
+    position: fixed;
+    z-index: 2;
+    top: calc(50% - 375px);
+    left: calc(50% - 500px);
+    background-color: white;
+    text-align: center;
+    border: 1px solid #9b9b9b;
+    box-shadow: 0px 0px 26px 6px;
+}
+.modal-title{
+    margin: 50px 0;
+}
+.input-container{
+    margin-top: 50px;
+}
+.input-container input, .text-input{
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    color: #9b9b9b;  
+    font-family: 'Cardo', serif;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.input-container input:focus, .text-input:focus{
+    color: #1e1e1e;
+}
+.small-input{
+    width: 400px;
+}
+.small-input:nth-child(even){
+    margin-left:50px;
+}
+.long-input{
+    width: 850px;
+}
+.text-input{
+    width: 850px;
+    height: 280px;
+}
+.modal-button{
+    background-color: inherit;
+    width: 200px;
+    padding:15px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#modal-cancel-button{
+    margin-right: 450px;
+}
+.modal-overlay{
+    display:none;
+    background-color: rgba(155,155,155,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#delete-modal-container{
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    z-index: 1;
+    top: calc(50% - 100px);
+    left: calc(50% - 250px);
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 0px 0px 26px 6px;
+    padding: 10px;
+}
+.delete-modal-button{
+    background-color: inherit;
+    width: 200px;
+    padding:15px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 25px 10px 0px 10px;
+}

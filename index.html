@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog</title>
+
+    <link rel="stylesheet" type="text/css" href="css/index-style.css">
+    
+    <link rel="stylesheet" href="images/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+                                                                            <!-- Navigation  -->
+        <header>
+            <nav class="nav-menu-wrapper">
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">TRAVEL UPDATES</li>
+                    <li class="nav-menu-item">REVIEWS</li>
+                    <li class="nav-menu-item">ABOUT</li>
+                    <li class="nav-menu-item">CONTACT</li>
+                </ul>
+            </nav>
+            
+                                                                            <!-- Add Article Button  -->
+            <button id="add-article-button"><i class="fa fa-plus"></i>Add Article</button>
+        </header>
+
+                                                                            <!-- Add Article Modal  -->
+        <div id="modal-overlay" class="modal-overlay">
+            <div id="modal-container">                            
+                <h1 class="title modal-title">Add / Edit Element</h1>
+                <div class="input-container">
+                    <input type="text" class="small-input input" id="modalTitle" placeholder="Please enter title"  required/>
+                    <input type="text" class="small-input input" id="modalTag" placeholder="Please enter tag"  required/>
+                    <input type="text" class="small-input input" id="modalAuthor" placeholder="Please enter author's name"  required/>
+                    <input type="text" class="small-input input" id="modalDate" placeholder="Please enter date"  required/>
+                    <input type="text" class="long-input input" id="modalImage" placeholder="Please enter image url"  required/>
+                    <textarea class="text-input input" id="modalContent"  required></textarea>
+                </div>
+                <button class="modal-button" id="modal-cancel-button">CANCEL</button>
+                <button class="modal-button" id="modal-submit-button">SAVE</button>
+            </div>
+        </div>
+                                                                            <!-- Delete Article Modal  -->
+        <div class="modal-overlay" id="delete-modal-container-overlay">
+            <div id="delete-modal-container">
+                <h2 class="subtitle">Are you sure you want to delete the article?</h2>
+                <button class="delete-modal-button" id="delete-modal-cancel-button">CANCEL</button>
+                <button class="delete-modal-button" id="delete-modal-submit-button">DELETE</button>
+            </div>
+        </div>
+        
+                                                                            <!-- Main  -->
+        <main id="main">
+        </main>
+
+                                                                            <!-- Footer  -->
+        <footer>
+            <button class="footer-button" id="previous-page-button">previous</button>
+            <button class="footer-button" id="next-page-button">next</button>
+        </footer>
+    </div>
+
+    <script src="javaScript/blogScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog</title>
+
+    <link rel="stylesheet" type="text/css" href="css/index-style.css">
+    
+    <link rel="stylesheet" href="images/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="nav-menu-wrapper">
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">TRAVEL UPDATES</li>
+                    <li class="nav-menu-item">REVIEWS</li>
+                    <li class="nav-menu-item">ABOUT</li>
+                    <li class="nav-menu-item">CONTACT</li>
+                </ul>
+            </nav>
+            <button id="add-article-button"><i class="fa fa-plus"></i>Add Article</button>
+        </header>
+
+        <div id="modalContainer" class="modal">
+            <h1 class="title modal-title">Add / Edit Element</h1>
+            <div class="input-container">
+                <input type="text" class="small-input" id="places" placeholder="Please enter title"/>
+                <input type="text" class="small-input" id="places" placeholder="Please enter tag"/>
+                <input type="text" class="small-input" id="places" placeholder="Please enter author's name"/>
+                <input type="text" class="small-input" id="places" placeholder="Please enter date"/>
+                <input type="text" class="long-input" id="places" placeholder="Please enter image url"/>
+                <input type="text" class="text-input" id="places" placeholder="Please enter content"/>
+            </div>
+            <button class="modal-button" id="modal-cancel-button">CANCEL</button>
+            <button class="modal-button">SAVE</button>
+        </div>
+        
+        <main id="main">
+            <article class="article">
+                <h1 class="title article-title">The complete guide to explore Transilvania, with your bike</h1>
+                <div class="article-info">
+                    <span class="article-info-text">Destination Europe</span><i class="fa fa-circle"></i>
+                    <span class="article-info-text">Added by <span class="article-info-text--dark">Jonnathan Mercadona</span></span><i class="fa fa-circle"></i>
+                    <span class="article-info-text">July 01, 2018</span>
+                </div>
+                <div class="article-edit-section-clearfix">
+                    <div class="article-edit-section">
+                        <button class="article-edit-button">Edit</button>
+                        <span class="article-edit-decoration">|</span>
+                        <button class="article-edit-button">Delete</button>
+                    </div>
+                </div>
+                <img src="images/bike.jpg" alt="article-image" />
+                <p class="text-paragraph article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore labore similique eum consequuntur incidunt voluptatum. Quae, cum laudantium suscipit harum earum ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas nesciunt laboriosam quaerat. Obcaecati officiis doloremque id eos, rerum facilis labore molestiae reprehenderit esse neque facere eum dicta quia nemo distinctio eligendi, ducimus tenetur placeat? Labore recusandae, odio odit neque quibusdam, eius nemo quos quisquam nesciunt tempore repellendus similique repudiandae placeat ea id pariatur eum at molestiae maiores laudantium accusamus voluptas sequi? Ad culpa repellat iste accusamus aperiam suscipit sapiente magnam repellendus magni debitis harum necessitatibus illo quam praesentium eum fuga voluptatum rerum odio, aspernatur quod placeat laudantium! Suscipit quibusdam eos atque eligendi explicabo autem quae facilis? Officia, ad vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum itaque ea eum facilis, minima aut. Dolore esse enim cupiditate veritatis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi eaque, dolores praesentium animi sit perferendis architecto nemo cum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit possimus temporibus laboriosam magni hic quae quod molestias. Cupiditate odit deleniti architecto. </p>
+            </article>
+
+
+
+            <article class="article">
+                <h1 class="title article-title">Bucegi: Places you must visit before you die</h1>
+                <div class="article-info">
+                    <span class="article-info-text">Must Visit</span><i class="fa fa-circle"></i>
+                    <span class="article-info-text">Added by <span class="article-info-text--dark">Jonnathan Mercadona</span></span><i class="fa fa-circle"></i>
+                    <span class="article-info-text">July 30, 2018</span>
+                </div>
+                <div class="article-edit-section-clearfix">
+                    <div class="article-edit-section">
+                        <button class="article-edit-button">Edit</button>
+                        <span class="article-edit-decoration">|</span>
+                        <button class="article-edit-button">Delete</button>
+                    </div>
+                </div>
+                <img src="images/bucegi.jpg" alt="article-image" />
+                <p class="text-paragraph article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore labore similique eum consequuntur incidunt voluptatum. Quae, cum laudantium suscipit harum earum ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas nesciunt laboriosam quaerat. Obcaecati officiis doloremque id eos, rerum facilis labore molestiae reprehenderit esse neque facere eum dicta quia nemo distinctio eligendi, ducimus tenetur placeat? Labore recusandae, odio odit neque quibusdam, eius nemo quos quisquam nesciunt tempore repellendus similique repudiandae placeat ea id pariatur eum at molestiae maiores laudantium accusamus voluptas sequi? Ad culpa repellat iste accusamus aperiam suscipit sapiente magnam repellendus magni debitis harum necessitatibus illo quam praesentium eum fuga voluptatum rerum odio, aspernatur quod placeat laudantium! Suscipit quibusdam eos atque eligendi explicabo autem quae facilis? Officia, ad vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum itaque ea eum facilis, minima aut. Dolore esse enim cupiditate veritatis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi eaque, dolores praesentium animi sit perferendis architecto nemo cum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit possimus temporibus laboriosam magni hic quae quod molestias. Cupiditate odit deleniti architecto. </p>
+            </article>
+
+            <article class="article">
+                <h1 class="title article-title">Romania: The land of dreams</h1>
+                <div class="article-info">
+                    <span class="article-info-text">Village</span><i class="fa fa-circle"></i>
+                    <span class="article-info-text">Added by <span class="article-info-text--dark">Jonnathan Mercadona</span></span><i class="fa fa-circle"></i>
+                    <span class="article-info-text">July 17, 2018</span>
+                </div>
+                <div class="article-edit-section-clearfix">
+                    <div class="article-edit-section">
+                        <button class="article-edit-button">Edit</button>
+                        <span class="article-edit-decoration">|</span>
+                        <button class="article-edit-button">Delete</button>
+                    </div>
+                </div>
+                <img src="images/village.jpg" alt="article-image" />
+                <p class="text-paragraph article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore labore similique eum consequuntur incidunt voluptatum. Quae, cum laudantium suscipit harum earum ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas nesciunt laboriosam quaerat. Obcaecati officiis doloremque id eos, rerum facilis labore molestiae reprehenderit esse neque facere eum dicta quia nemo distinctio eligendi, ducimus tenetur placeat? Labore recusandae, odio odit neque quibusdam, eius nemo quos quisquam nesciunt tempore repellendus similique repudiandae placeat ea id pariatur eum at molestiae maiores laudantium accusamus voluptas sequi? Ad culpa repellat iste accusamus aperiam suscipit sapiente magnam repellendus magni debitis harum necessitatibus illo quam praesentium eum fuga voluptatum rerum odio, aspernatur quod placeat laudantium! Suscipit quibusdam eos atque eligendi explicabo autem quae facilis? Officia, ad vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum itaque ea eum facilis, minima aut. Dolore esse enim cupiditate veritatis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi eaque, dolores praesentium animi sit perferendis architecto nemo cum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit possimus temporibus laboriosam magni hic quae quod molestias. Cupiditate odit deleniti architecto. </p>
+            </article>
+            
+            <article class="article">
+                <h1 class="title article-title">Sarmale - stuffed cabbage rolls    Good or bad?</h1>
+                <div class="article-info">
+                    <span class="article-info-text">Food</span><i class="fa fa-circle"></i>
+                    <span class="article-info-text">Added by <span class="article-info-text--dark">Jonnathan Mercadona</span></span><i class="fa fa-circle"></i>
+                    <span class="article-info-text">December 29, 2017</span>
+                </div>
+                <div class="article-edit-section-clearfix">
+                    <div class="article-edit-section">
+                        <button class="article-edit-button">Edit</button>
+                        <span class="article-edit-decoration">|</span>
+                        <button class="article-edit-button">Delete</button>
+                    </div>
+                </div>
+                <img src="images/sarmale.jpg" alt="article-image" />
+                <p class="text-paragraph article-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempore labore similique eum consequuntur incidunt voluptatum. Quae, cum laudantium suscipit harum earum ipsam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas nesciunt laboriosam quaerat. Obcaecati officiis doloremque id eos, rerum facilis labore molestiae reprehenderit esse neque facere eum dicta quia nemo distinctio eligendi, ducimus tenetur placeat? Labore recusandae, odio odit neque quibusdam, eius nemo quos quisquam nesciunt tempore repellendus similique repudiandae placeat ea id pariatur eum at molestiae maiores laudantium accusamus voluptas sequi? Ad culpa repellat iste accusamus aperiam suscipit sapiente magnam repellendus magni debitis harum necessitatibus illo quam praesentium eum fuga voluptatum rerum odio, aspernatur quod placeat laudantium! Suscipit quibusdam eos atque eligendi explicabo autem quae facilis? Officia, ad vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum itaque ea eum facilis, minima aut. Dolore esse enim cupiditate veritatis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi eaque, dolores praesentium animi sit perferendis architecto nemo cum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit possimus temporibus laboriosam magni hic quae quod molestias. Cupiditate odit deleniti architecto. </p>
+            </article>
+        </main>
+        <footer>
+            <button class="footer-button">previous</button>
+            <button class="footer-button">next</button>
+        </footer>
+    </div>
+
+    <script>
+        var modal = document.getElementById("modalContainer");
+        var btn = document.getElementById("add-article-button");
+        var closebtn = document.getElementById("modal-cancel-button");
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }   
+
+        closebtn.onclick = function(event) {
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
